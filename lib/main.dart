@@ -1,11 +1,15 @@
 import 'package:adidas/homescreen.dart';
+import 'package:adidas/homescreen_navi.dart';
 import 'package:flutter/material.dart';
 
 void main() {
   runApp(
-    const MaterialApp(
+    MaterialApp(
+        theme: ThemeData(
+          scaffoldBackgroundColor: Colors.white,
+        ),
         debugShowMaterialGrid: false,
         debugShowCheckedModeBanner: false,
-        home: Homescreen()),
+        home: const HomescreenNavi()),
   );
 }
